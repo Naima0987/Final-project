@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>SafeNest</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shelters.html">Shelters</a>
+        <a href="donations.html">Donate</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Make a Donation</h2>
+
+        <form id="donation-form">
+            <input type="text" id="shelter" placeholder="Shelter Name" required>
+
+            <select id="type">
+                <option value="">Select Type</option>
+                <option value="Money">Money</option>
+                <option value="Food">Food</option>
+                <option value="Clothes">Clothes</option>
+            </select>
+
+            <input type="text" id="amount" placeholder="Amount / Items" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 SafeNest</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
