@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #fff;
+    background-image:url(bckg.jpg),linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: #809ec5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
