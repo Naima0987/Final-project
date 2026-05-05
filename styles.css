@@ -1,15 +1,17 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #f4f6f8;
-    color: #fff;
+    color: #4f5083;
     background-image:url(bckg.jpg),linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-size: larger;
+    font-display: block;
 }
 header {
-    background-color: #809ec5;
+    background-color: #2b3d55;
     color: white;
     padding: 15px 20px;
     display: flex;
