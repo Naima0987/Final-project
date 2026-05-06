@@ -154,3 +154,57 @@ img{
 *{
     box-sizing:border-box;
 }
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2b3d55;
+}
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+form input:focus,
+form select:focus {
+    border-color: #2c7be5;
+    outline: none;
+}
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+#message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+section h2 {
+    text-align: center;
+    color: #2c7be5;
+    margin-bottom: 20px;
+}
+
