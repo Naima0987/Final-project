@@ -26,20 +26,18 @@ header {
     padding: 60px 20px;
 
 }
+
 .hero-text {
-    font-size: 16px;
-    line-height: 1.6;
+    flex: 1;
     max-width: 500px;
-    transition: color 0.3s ease;
+}
+
+.hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
-    gap: 20px; 
-    flex-wrap: wrap;
-    align-items: center;
-
-
 }
+
 
 .hero-image img {
     width: 100%;
@@ -51,38 +49,12 @@ header {
     
     
 }
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-.hero-image{
-    width: 250px;
-    height: auto;
-    border-radius: 10%;
-    transition: transform 0.4s ease, box-shadow 0.4s ease; border-radius: 10px;
-
-}
-#hero{
-    padding: 40px;
-    color:  #a07777;
-    border-radius: 20px;
-    transition: all 0.4s ease ;
-
-}
-#hero:hover{
-    background-color:#be9680;
-    transform: scale(1.05);
-    color:rgb(68, 42, 42);
-}
-
-
- .card-container {
-    display: flex;
+.card-container {
+    display: grid;
     gap: 20px;
     flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .card img {
@@ -93,9 +65,10 @@ header {
 .card {
     width: 350px;
     background: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card:hover {
@@ -154,49 +127,7 @@ img{
 *{
     box-sizing:border-box;
 }
-form {
-    max-width: 500px;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2b3d55;
-}
-form input,
-form select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-form input:focus,
-form select:focus {
-    border-color: #2c7be5;
-    outline: none;
-}
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-form button:hover {
-    background-color: #218838;
-}
 #message {
     text-align: center;
     margin-top: 10px;
@@ -206,4 +137,78 @@ section h2 {
     text-align: center;
     color: #2c7be5;
     margin-bottom: 20px;
+}
+
+.donation-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.donation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2b3d55;
+}
+
+.donation-form input,
+.donation-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.donation-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.donation-form button:hover {
+    background-color: #218838;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
 }

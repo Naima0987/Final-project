@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -22,21 +22,22 @@
     <section>
         <h2>Make a Donation</h2>
 
-        <form id="donation-form" class="donation-form"></form>
-            <input type="text" id="shelter" placeholder="Shelter Name" required>
+        <form id="donation-form" class="donation-form">
 
-            <select id="type">
-                <option value="">Select Type</option>
-                <option value="Money">Money</option>
-                <option value="Food">Food</option>
-                <option value="Clothes">Clothes</option>
-            </select>
+    <input type="text" id="shelter" placeholder="Shelter Name" required>
 
-            <input type="text" id="amount" placeholder="Amount / Items" required>
+    <select id="type" required>
+        <option value="">Select Type</option>
+        <option value="Money">Money</option>
+        <option value="Food">Food</option>
+        <option value="Clothes">Clothes</option>
+    </select>
 
-            <button type="submit">Submit</button>
-        </form>
+    <input type="text" id="amount" placeholder="Amount / Items" required>
 
+    <button type="submit">Submit</button>
+
+</form>
         <p id="message"></p>
 
     </section>

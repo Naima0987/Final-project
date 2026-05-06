@@ -21,8 +21,11 @@ if (form) {
 
         localStorage.setItem("donations", JSON.stringify(donations));
 
-        message.textContent = "Donation saved successfully!";
-        message.style.color = "green";
+message.textContent = "Donation saved successfully! 🎉";
+
+setTimeout(() => {
+  message.textContent = "";
+}, 3000);        message.style.color = "green";
 
         form.reset();
     });
