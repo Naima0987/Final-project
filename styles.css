@@ -21,9 +21,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 60px 20px;
+
+}
+.hero-card{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) ;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
@@ -37,7 +45,10 @@ header {
     display: flex;
     justify-content: center;
 }
-
+.hero-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);;
+}
 
 .hero-image img {
     width: 100%;
@@ -53,7 +64,8 @@ header {
     display: grid;
     gap: 20px;
     flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 20px;
     
 }
 
@@ -63,12 +75,17 @@ header {
 }
 
 .card {
-    width: 350px;
     background: white;
     padding: 15px;
     border-radius: 10px;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card:hover {
@@ -182,33 +199,4 @@ section h2 {
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
-}
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        width: 100%;
-    }
 }
