@@ -271,3 +271,6 @@ section h2 {
 html {
     scroll-behavior: smooth;
 }
+nav a.active {
+    border-bottom: 2px solid white;
+}
