@@ -26,29 +26,33 @@ header {
     padding: 60px 20px;
 
 }
-.hero-card{
+.hero-card {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1) ;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.hero-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .hero-text {
     flex: 1;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
-.hero-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);;
-}
+
+
 
 .hero-image img {
     width: 100%;
@@ -209,8 +213,8 @@ section h2 {
 
 .donation-counter {
     background: white;
-    width: 220px;
-    padding: 18px;
+    width: 100px;
+    padding: 1px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -235,4 +239,32 @@ section h2 {
         justify-content: center;
         margin-top: 20px;
     }
+}
+.hero-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.hero-image-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.hero-image-group img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image-group img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
