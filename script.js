@@ -49,3 +49,10 @@ if (shelterList) {
         shelterList.appendChild(card);
     });
 }
+const donationCount = document.getElementById("donation-count");
+
+if (donationCount) {
+    let donations = JSON.parse(localStorage.getItem("donations")) || [];
+
+    donationCount.textContent = donations.length;
+}
