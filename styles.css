@@ -200,11 +200,18 @@ section h2 {
     margin-top: 10px;
     font-weight: bold;
 }
+.counter-wrapper {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    z-index: 10;
+}
+
 .donation-counter {
     background: white;
-    margin-top: 25px;
-    padding: 20px;
-    border-radius: 10px;
+    width: 220px;
+    padding: 18px;
+    border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -212,10 +219,20 @@ section h2 {
 .donation-counter h3 {
     color: #2b3d55;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 #donation-count {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .counter-wrapper {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
