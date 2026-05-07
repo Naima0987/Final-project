@@ -85,6 +85,7 @@ header {
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     width: 100%;
+    border: 1px solid #eee;
 }
 @media (max-width: 768px) {
     .card-container {
