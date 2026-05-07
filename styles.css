@@ -279,3 +279,6 @@ nav a.active {
     background-color: #218838;
     transform: scale(1.05);
 }
+.hero-image-column img {
+    border: 3px solid white;
+}
