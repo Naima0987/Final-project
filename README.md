@@ -33,7 +33,7 @@ No known bugs.
 - Add shelter search functionality
 
 ## Live Link
-Add your GitHub Pages live link here.
+https://naima0987.github.io/Final-project/.
 
 ## Copyright
 © 2026 Naima Abdullahi
