@@ -274,3 +274,7 @@ html {
 nav a.active {
     border-bottom: 2px solid white;
 }
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
